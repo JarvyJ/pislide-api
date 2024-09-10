@@ -1,6 +1,6 @@
 # Pi Slide API
 
-This is a really early API (and eventually a UI) for managing various aspects of [pislide-os](https://github.com/JarvyJ/pislide-os). It can currently do the following:
+This is a _really_ early API (and eventually a UI) for managing various aspects of [pislide-os](https://github.com/JarvyJ/pislide-os). It can currently do the following:
 - Change slideshow settings
 - Start/Stop the slideshow service (not in the UI yet)
 - Upload and manage photos (not in the UI yet)
@@ -19,13 +19,13 @@ The frontend is written with [SvelteKit](https://kit.svelte.dev/) and uses [Bulm
 ## Building and Running
 Assuming you have golang setup, after pulling down this repository:
 ```bash
-go run cmd/pislide-api/main.go
+go run cmd/pislide-api/main.go # or run with gow(https://github.com/mitranim/gow) for hot reloading
 ```
-(or run with [gow](https://github.com/mitranim/gow) for hot reloading)
 
-The API will be available at [http://localhost:8888/api-ref](http://localhost:8888/api-ref). It will run the frontend code found in `frontend/build`.
+- The API will be available at [http://localhost:8888/api-ref](http://localhost:8888/api-ref).
+- The frontend will run at `/` with the static build from `frontend/build`.
 
-If you are working on frontend development, you'll want to start the frontend process:
+If you are working on frontend development, you'll want to then start the frontend process:
 ```bash
 cd frontend
 npm run dev -- --open
